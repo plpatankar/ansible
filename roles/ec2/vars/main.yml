@@ -1,0 +1,22 @@
+---
+
+access_key: "AKIAIVGQFPHMCUMH4UZA"
+count: 1 # number of instances to be created
+ebs_optimized: "false"
+enable_monitoring: "no"
+gather_facts: False
+image: ami-c998b6b2 # This is an AMI i created myself
+instance_profile_name: "" # Name of the IAM instance profile to use.
+instance_tags: '{"Provisioning":"ansible","Creator":"T-systems"}'
+instance_type: t2.micro
+keypair: Key001 # This is one of my keys that i already have in AWS
+public_ip_enable: "yes"
+region: us-east-1 # Change the Region
+secret_key: "EZS7K6XLjiErvhXrEjhBJYH+bO/wcEAR3HLmLXcs"
+security_group: ppp-security-group # Change the security group name here
+shutdown_behavior: "stop"
+tags: provisioning
+termination_protection: "no"
+vpc_subnet: subnet-aaa4fef0
+wait_timeout: 300
+
